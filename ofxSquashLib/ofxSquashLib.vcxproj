@@ -114,13 +114,13 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>squash0.8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\..\..\externalAddons\ofxSquash\libs\squash\lib\vs\$(Platform)\squash0.8.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>..\..\..\addons\ofxSquash\libs\squash\lib\vs\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\externalAddons\ofxSquash\libs\squash\lib\vs\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <PostBuildEvent>
-      <Command>robocopy "$(ProjectDir)../../../addons/ofxSquash/libs/squash/bin/vs/$(Platform)/" "$(SolutionDir)bin/" "*.dll" "*.ini" /njs /njh /np /fp /bytes /s
+      <Command>robocopy "$(ProjectDir)../../../externalAddons/ofxSquash/libs/squash/bin/vs/$(Platform)/" "$(SolutionDir)bin/" "*.dll" "*.ini" /njs /njh /np /fp /bytes /s
 if errorlevel 1 exit 0 else exit %errorlevel%</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -129,7 +129,7 @@ if errorlevel 1 exit 0 else exit %errorlevel%</Command>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxSquash\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\externalAddons\ofxSquash\src;..\..\..\externalAddons\ofxSquash\libs\squash\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -138,10 +138,10 @@ if errorlevel 1 exit 0 else exit %errorlevel%</Command>
       <AdditionalDependencies>squash0.8.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>..\..\..\addons\ofxSquash\libs\squash\lib\vs\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\externalAddons\ofxSquash\libs\squash\lib\vs\$(Platform);%(AdditionalLibraryDirectories)\</AdditionalLibraryDirectories>
     </Lib>
     <PostBuildEvent>
-      <Command>robocopy "$(ProjectDir)../../../addons/ofxSquash/libs/squash/bin/vs/$(Platform)/" "$(SolutionDir)bin/" "*.dll" "*.ini" /njs /njh /np /fp /bytes /s
+      <Command>robocopy "$(ProjectDir)../libs/squash/bin/vs/$(Platform)/" "$(SolutionDir)bin/" "*.dll" "*.ini" /njs /njh /np /fp /bytes /s
 if errorlevel 1 exit 0 else exit %errorlevel%</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -151,7 +151,7 @@ if errorlevel 1 exit 0 else exit %errorlevel%</Command>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxCvMin\src;..\..\..\addons\ofxCvMin\libs\opencv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\externalAddons\ofxCvMin\src;..\..\..\externalAddons\ofxCvMin\libs\opencv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -162,10 +162,10 @@ if errorlevel 1 exit 0 else exit %errorlevel%</Command>
       <AdditionalDependencies>squash0.8.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>..\..\..\addons\ofxSquash\libs\squash\lib\vs\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\externalAddons\ofxSquash\libs\squash\lib\vs\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <PostBuildEvent>
-      <Command>robocopy "$(ProjectDir)../../../addons/ofxSquash/libs/squash/bin/vs/$(Platform)/" "$(SolutionDir)bin/" "*.dll" "*.ini" /njs /njh /np /fp /bytes /s
+      <Command>robocopy "$(ProjectDir)../../../externalAddons/ofxSquash/libs/squash/bin/vs/$(Platform)/" "$(SolutionDir)bin/" "*.dll" "*.ini" /njs /njh /np /fp /bytes /s
 if errorlevel 1 exit 0 else exit %errorlevel%</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -175,7 +175,7 @@ if errorlevel 1 exit 0 else exit %errorlevel%</Command>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxSquash\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\externalAddons\ofxSquash\src;..\..\..\externalAddons\ofxSquash\libs\squash\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -186,10 +186,10 @@ if errorlevel 1 exit 0 else exit %errorlevel%</Command>
       <AdditionalDependencies>squash0.8.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>..\..\..\addons\ofxSquash\libs\squash\lib\vs\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\externalAddons\ofxSquash\libs\squash\lib\vs\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <PostBuildEvent>
-      <Command>robocopy "$(ProjectDir)../../../addons/ofxSquash/libs/squash/bin/vs/$(Platform)/" "$(SolutionDir)bin/" "*.dll" "*.ini" /njs /njh /np /fp /bytes /s
+      <Command>robocopy "$(ProjectDir)../libs/squash/bin/vs/$(Platform)/" "$(SolutionDir)bin/" "*.dll" "*.ini" /njs /njh /np /fp /bytes /s
 if errorlevel 1 exit 0 else exit %errorlevel%</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
